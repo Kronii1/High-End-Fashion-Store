@@ -8,7 +8,40 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div class="phone"><!-- First phone must be here --></div>
+    <div class="phone">
+      <div class="phone__screen">
+        <header class="user__header">
+          <div class="user__header-item">
+            <div class="user__header-icon"></div>
+            <span class="user__header-name">Timothy Snyder</span>
+          </div>
+          <span class="user__header-settings">⛭</span>
+        </header>
+        <div class="main">
+          <span class="main__content">The Making of Modern Ukraine</span>
+        </div>
+        <div class="progress">
+          <span class="progress__title">In progress</span>
+          <div class="progress__item">
+            <span class="progress__per">63%</span>
+            <progress
+              class="progress__bar"
+              value="63"
+              min="0"
+              max="100"
+            ></progress>
+          </div>
+          <div class="progress__date">
+            <span>Sep 10, 22</span>
+            <span>Dec 10, 22</span>
+          </div>
+        </div>
+        <div class="footer__button">
+          <span class="footer__button-text">Continue Learning</span>
+        </div>
+      </div>
+    </div>
+
     <div class="phone">
       <header class="header">
         <ul class="header__list">
