@@ -26,7 +26,12 @@ body {
 .phone__screen {
   display: grid;
   grid-template-rows: 50px 4.5fr 2.5fr 1fr;
-  background-color: #cee1ff;
+  background: rgb(240, 241, 213);
+  background: radial-gradient(
+    circle,
+    rgba(240, 241, 213, 1) 0%,
+    rgba(206, 225, 253, 1) 100%
+  );
   height: 92%;
   border-radius: 20px;
   padding: 20px;
