@@ -117,6 +117,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  position: relative;
   .footer__info-title {
     display: flex;
     gap: 10px;
@@ -142,6 +143,40 @@ body {
     border-radius: 20px;
     background-color: #ffde30;
     transform: rotate(40deg);
+  }
+  .footer__absoulte {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+    border-radius: 30px;
+    background-color: black;
+    .footer__absoulte-icon {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      font-size: 12px;
+      &:first-child {
+        background-color: #343434;
+      }
+      &:nth-child(2) {
+        background-color: #282828;
+      }
+      &:last-child {
+        background-image: url("../image/profile.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        border-radius: 50%;
+      }
+    }
   }
 }
 
