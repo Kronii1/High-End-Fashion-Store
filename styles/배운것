@@ -1,6 +1,0 @@
-mixin에서 다른걸 추가하고싶을 경우
-mixin에 @contact 를 추가하고
-
-include alert(){
-  여기에 보낼 속성을 추가해주면 된다.
-}
