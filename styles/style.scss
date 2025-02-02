@@ -18,12 +18,17 @@ body {
   box-sizing: border-box;
 }
 
+.first_phone {
+  display: grid;
+  grid-template-rows: 90% 10%;
+}
+
 .phone__screen {
   display: grid;
   grid-template-rows: 50px 4.5fr 2.5fr 1fr;
   background-color: #cee1ff;
-  height: 95%;
-  border-radius: 15px;
+  height: 92%;
+  border-radius: 20px;
   padding: 20px;
   .user__header {
     display: flex;
@@ -102,6 +107,41 @@ body {
   background-color: white;
   .footer__button-text {
     font-size: 22px;
+  }
+}
+
+.footer__info {
+  background-color: #f3f1ed;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  .footer__info-title {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    align-items: center;
+    .footer__info-icon {
+      width: 40px;
+      height: 40px;
+      background-image: url("../image/profile.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 40px;
+      border-radius: 50%;
+    }
+  }
+  .footer__info-freeBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border: 1px solid black;
+    padding: 12px;
+    border-radius: 20px;
+    background-color: #ffde30;
+    transform: rotate(40deg);
   }
 }
 
