@@ -1,15 +1,15 @@
-# Education Courses App
+# High-End Fashion Store - iOS App Design
 
-Copyright 2025. Andrew Sereda All rights reserved.
+Copyright 2025. Robert Berki All rights reserved.
 
-## Education Courses Andrew Sereda Design
+## High-End Fashion Store - iOS App Design Robert Berki Design
 
-<https://dribbble.com/shots/19526780-Education-Courses-App>
+<https://dribbble.com/shots/14115821/attachments/5738257?mode=media>
 
 ---
 
 ## 🕰️ 개발기간
 
-25.01.28 ~ 25.01.30
+25.02.03 ~ 25.02.~~
 
 This repository was created to study HTML & SCSS. 💖
