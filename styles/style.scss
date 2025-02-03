@@ -1,9 +1,111 @@
 @import url(./reset.scss);
 
+$grey: #cacdcd;
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: #bcbfbf;
+}
+
+.phone {
+  width: 480px;
+  height: 90%;
+  background-color: $grey;
+  box-shadow: 5px 10px 10px rgba($color: #000000, $alpha: 0.5);
+  border-radius: 25px;
+}
+
+.header {
+  padding: 50px 15px 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .header__title {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.total {
+  background-color: black;
+  padding: 30px 15px;
+  color: $grey;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-weight: bold;
+  gap: 10px;
+  .total__price {
+    font-size: 22px;
+  }
+}
+
+.items {
+  background-color: #c6caca;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  .item {
+    border-top: 3px solid black;
+    position: relative;
+    .item__info {
+      padding: 30px 15px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: flex-start;
+      .item__info-col {
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        &:nth-child(2) {
+          align-items: flex-end;
+        }
+      }
+      .item__title {
+        font-size: 42px;
+        font-weight: bold;
+      }
+      .item__subtitle {
+        font-size: 14px;
+      }
+      .item__total-price {
+        font-size: 36px;
+      }
+      .item__piece-price {
+        font-size: 18pxpx;
+      }
+    }
+  }
+}
+
+.item__specs {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 125px);
+  background-color: #d7dbdb;
+  .spec {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    &:last-child {
+      border-left: 3px solid black;
+    }
+  }
+}
+
+.item__photo {
+  position: absolute;
+  width: 40%;
+  height: 60%;
+  border: 3px solid black;
+  right: 15px;
+  bottom: 0px;
+  object-fit: cover;
 }
